@@ -17,6 +17,7 @@ User.destroy_all
       title: Faker::Book.title,
       author: Faker::Book.author,
       rating: Faker::Number.number(digits: 1),
+      cover_img_url: 'https://source.unsplash.com/random/400x400',
       user: user
     )
   end
