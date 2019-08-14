@@ -10,11 +10,11 @@ module Types
       User.all
     end
 
-    field :user, [Types::UserType], null: false do
+    field :user, Types::UserType, null: false do
       argument :id, ID, required: true
     end
 
-    def user(id: )
+    def user(id:)
       User.find(id)
     end
   end
